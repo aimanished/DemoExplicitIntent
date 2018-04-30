@@ -23,8 +23,8 @@ public class HeroStatsActivity extends AppCompatActivity {
         tvName = (TextView)findViewById(R.id.TextViewName);
         tvStrength = (TextView)findViewById(R.id.TextViewStrength);
         tvTechnicalprowess = (TextView)findViewById(R.id.TextViewTechnicalProwess);
-        btnDislike = findViewById(R.id.buttonDislike);
-        btnLike = findViewById(R.id.buttonLike);
+        btnDislike = (Button)findViewById(R.id.buttonDislike);
+        btnLike = (Button)findViewById(R.id.buttonLike);
 
         tvName.setText("name: " + hero.getName());
         tvStrength.setText("Strength: " + hero.getStrength());
@@ -49,6 +49,5 @@ public class HeroStatsActivity extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 }

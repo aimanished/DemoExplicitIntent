@@ -55,8 +55,11 @@ public class MainActivity extends AppCompatActivity {
                 if(requestCode == requestCodeForBatmanStats){
                     statement = "You " + like + " Batman";
                 }
-                Toast.makeText(MainActivity.this,"Not working :'(",Toast.LENGTH_LONG).show();
+
+                Toast.makeText(MainActivity.this,statement,Toast.LENGTH_LONG).show();
             }
+        } else {
+            Toast.makeText(MainActivity.this,"Not working :'(",Toast.LENGTH_LONG).show();
         }
 
     }
